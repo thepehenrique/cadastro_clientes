@@ -36,15 +36,20 @@ def menu():
         print('[1] CADASTRAR')
         print('[2] LOGIN')
         print('[0] SAIR')
-        opcao = int(input('Informe uma opção: '))
-        print()
-        if opcao == 1:
-            registro()
-        elif opcao == 2:
-            login()
-        elif opcao == 0:
-            break
-        else:
-            print('Insira uma opção válida.')
+        try:
+            opcao = int(input("Informe uma opção: "))
+            print()
+            if opcao == 1:
+                registro()
+            elif opcao == 2:
+                login()
+            elif opcao == 0:
+                break
+            else:
+                print('Insira uma opção válida.')
+                print()
+        except ValueError:
+            print('Insira uma opção válida')
+            print()
 
 menu()
