@@ -1,6 +1,6 @@
 def nome():
     while True:
-        nome = input('Nome Completo: ')
+        nome = input('Nome Completo: ').capitalize()
         if nome == '':
             print('Entrada Vazia.')
             continue
@@ -32,7 +32,7 @@ def senha():
     
 def estado():
     while True:
-        estado = input('Estado: ')
+        estado = input('Estado: ').upper()
         if senha == '':
             print('Entrada vazia.')
             continue
@@ -46,7 +46,7 @@ def estado():
 
 def profissao():
     while True:
-        prof = input('Profissão: ')
+        prof = input('Profissão: ').capitalize()
         if prof == '':
             print('Entrada vazia')
             continue
